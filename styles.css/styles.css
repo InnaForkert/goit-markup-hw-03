@@ -50,7 +50,7 @@ body {
 
 /* logo */
 
-.logo {
+.header-logo {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -59,14 +59,8 @@ body {
   font-family: var(--logo-font);
   font-size: 26px;
   font-weight: 700;
-}
 
-.black {
   color: var(--black);
-}
-
-.white {
-  color: var(--white);
 }
 
 /* nav */
@@ -255,7 +249,31 @@ body {
 /* footer */
 
 .page-footer {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 60px 15px;
+
   background-color: var(--black-background);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+
+  color: var(--white);
+}
+
+.footer-address {
+  display: block;
+}
+
+.footer-address:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-link,
