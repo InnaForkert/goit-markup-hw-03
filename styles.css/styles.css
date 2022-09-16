@@ -11,6 +11,17 @@
   --grey: #eee;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
 body {
   font-family: var(--main-font);
   color: var(--grey-text);
@@ -20,9 +31,28 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header */
+
+.page-header {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+
 .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   text-decoration: none;
   font-family: var(--logo-font);
   font-size: 26px;
@@ -37,10 +67,21 @@ body {
   color: var(--white);
 }
 
+/* nav */
+
+.nav-items {
+  display: flex;
+  gap: 50px;
+}
+
 .nav-item,
 .nav-item:visited {
-  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--black-text);
+
+  text-decoration: none;
   letter-spacing: 0.02em;
   font-weight: 500;
 }
@@ -48,6 +89,14 @@ body {
 .active,
 .active:visited {
   color: var(--accent);
+}
+
+/* contacts */
+
+.header-contacts {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
 }
 
 .header-contact {
@@ -62,9 +111,18 @@ body {
   color: var(--accent);
 }
 
-.hero-heading {
-  color: var(--white);
+/* hero */
+
+.hero {
+  text-align: center;
   background-color: var(--black-background);
+}
+
+.hero-heading {
+  margin-bottom: 30px;
+
+  color: var(--white);
+
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -73,6 +131,11 @@ body {
 }
 
 .primary-btn {
+  padding: 10px 32px;
+  min-width: 216px;
+  text-align: center;
+  border-radius: 4px;
+
   color: var(--white);
   background-color: var(--accent);
   border: none;
@@ -81,6 +144,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: 16px;
+  line-height: 1.88;
 
   cursor: pointer;
 }
@@ -99,15 +163,22 @@ body {
   cursor: pointer;
 }
 
-.radio-btn:hover,
-.radio-btn:focus {
-  color: var(--white);
-  background-color: var(--accent);
-}
+/* hidden headings */
 
 .hidden {
-  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
+/* first section */
 
 .first-section-heading {
   font-weight: 700;
@@ -175,4 +246,10 @@ body {
 .product-text {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.radio-btn:hover,
+.radio-btn:focus {
+  color: var(--white);
+  background-color: var(--accent);
 }
