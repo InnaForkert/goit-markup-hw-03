@@ -18,7 +18,9 @@
 }
 
 h1,
-h3 {
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -38,7 +40,7 @@ body {
 /* Header */
 
 .page-header {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -149,20 +151,6 @@ body {
   cursor: pointer;
 }
 
-.radio-btn {
-  color: var(--black-text);
-  background-color: var(--grey);
-  border: none;
-
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-
-  cursor: pointer;
-}
-
 /* hidden headings */
 
 .hidden {
@@ -180,32 +168,91 @@ body {
 
 /* first section */
 
+.first-section {
+  display: flex;
+  gap: 30px;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 15px 0 15px;
+}
+
+.first-section-subsection {
+  width: 270px;
+}
+
 .first-section-heading {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
-  color: var(--black-text);
   text-transform: uppercase;
+
+  color: var(--black-text);
 }
 
 .first-section-paragraph {
   line-height: 1.71;
 }
 
+/* section 2*/
+
+.section {
+  text-align: center;
+  padding: 94px 15px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.activities-photos {
+  display: flex;
+  gap: 30px;
+}
+
 .section-heading {
-  font-weight: 700;
+  margin-bottom: 50px;
+
   color: var(--black-text);
+
+  font-weight: 700;
   font-size: 36px;
+}
+
+/* team section */
+
+.team.list {
+  display: flex;
+  gap: 30px;
+
+  text-align: center;
+}
+
+.team-subsection {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-photo {
+  margin-bottom: 30px;
 }
 
 .team-name {
   color: var(--black-text);
+
   font-weight: 500;
   font-size: 16px;
+
+  margin-bottom: 10px;
 }
 
 .team-text {
   font-size: 16px;
+
+  margin-bottom: 30px;
 }
+
+/* footer */
 
 .page-footer {
   background-color: var(--black-background);
@@ -246,6 +293,20 @@ body {
 .product-text {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.radio-btn {
+  color: var(--black-text);
+  background-color: var(--grey);
+  border: none;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
 }
 
 .radio-btn:hover,
