@@ -1,0 +1,178 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+  --accent: #2196f3;
+  --black-text: #212121;
+  --grey-text: #757575;
+  --black-background: #2f303a;
+  --grey-button: #f5f4fa;
+  --white: #fff;
+  --black: #000;
+  --grey: #eee;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.black {
+  color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
+.nav-item,
+.nav-item:visited {
+  text-decoration: none;
+  color: var(--black-text);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.active,
+.active:visited {
+  color: var(--accent);
+}
+
+.header-contact {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent);
+}
+
+.hero-heading {
+  color: var(--white);
+  background-color: var(--black-background);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.primary-btn {
+  color: var(--white);
+  background-color: var(--accent);
+  border: none;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.radio-btn {
+  color: var(--black-text);
+  background-color: var(--grey);
+  border: none;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.radio-btn:hover,
+.radio-btn:focus {
+  color: var(--white);
+  background-color: var(--accent);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.first-section-heading {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--black-text);
+  text-transform: uppercase;
+}
+
+.first-section-paragraph {
+  line-height: 1.71;
+}
+
+.section-heading {
+  font-weight: 700;
+  color: var(--black-text);
+  font-size: 36px;
+}
+
+.team-name {
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.team-text {
+  font-size: 16px;
+}
+
+.page-footer {
+  background-color: var(--black-background);
+}
+
+.address-link,
+.address-link:visited {
+  color: var(--white);
+  opacity: 0.6;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.first,
+.first:visited {
+  opacity: 1;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent);
+}
+
+.product {
+  border: 1px solid var(--grey);
+}
+
+.product-heading {
+  font-weight: 700;
+  line-height: 2;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: var(--black-text);
+}
+
+.product-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
