@@ -44,6 +44,11 @@ body {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Header */
 
 .page-header {
@@ -167,19 +172,19 @@ body {
   margin: -1px;
 }
 
-/* first section */
+/* features section */
 
-.first-section {
+.features {
   display: flex;
   gap: 30px;
-  padding-top: 94px;
+  padding-bottom: 0;
 }
 
-.first-section-subsection {
+.features-subsection {
   width: 270px;
 }
 
-.first-section-heading {
+.features-heading {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -189,17 +194,11 @@ body {
   color: var(--black-text);
 }
 
-.first-section-paragraph {
+.features-paragraph {
   line-height: 1.71;
 }
 
-/* section 2*/
-
-.section {
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+/* activities section*/
 
 .activities-photos {
   display: flex;
@@ -208,6 +207,7 @@ body {
 
 .section-heading {
   margin-bottom: 50px;
+  text-align: center;
 
   color: var(--black-text);
 
@@ -282,6 +282,7 @@ body {
 .address-link:visited {
   color: var(--white);
   opacity: 0.6;
+
   text-decoration: none;
   font-weight: 400;
   font-style: normal;
@@ -306,7 +307,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -341,11 +341,9 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .product {
-  outline: 1px solid var(--grey);
   width: 370px;
   margin: 0;
 }
@@ -354,9 +352,13 @@ body {
   display: block;
 }
 
+.product-description {
+  border: 1px solid var(--grey);
+  border-top: none;
+}
+
 .product-heading {
-  margin-top: 20px;
-  padding: 0 24px;
+  padding: 20px 24px 0;
 
   font-weight: 700;
   line-height: 2;
@@ -369,6 +371,7 @@ body {
 .product-text {
   margin-top: 4px;
   padding: 0 24px 20px;
+
   font-size: 16px;
   line-height: 1.88;
 }
