@@ -31,6 +31,12 @@ body {
   font-size: 14px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -123,11 +129,15 @@ body {
 
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--black-background);
 }
 
 .hero-heading {
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: 696px;
 
   color: var(--white);
 
@@ -217,6 +227,10 @@ body {
 
 /* team section */
 
+.team {
+  background-color: var(--grey-button);
+}
+
 .team.list {
   display: flex;
   gap: 30px;
@@ -259,7 +273,7 @@ body {
 
 .footer-logo {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   width: 200px;
 
   text-decoration: none;
@@ -307,7 +321,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .radio-btn {
@@ -348,18 +362,14 @@ body {
   margin: 0;
 }
 
-.product-img {
-  display: block;
-}
-
 .product-description {
+  padding: 20px 24px;
+
   border: 1px solid var(--grey);
   border-top: none;
 }
 
 .product-heading {
-  padding: 20px 24px 0;
-
   font-weight: 700;
   line-height: 2;
   font-size: 18px;
@@ -370,7 +380,6 @@ body {
 
 .product-text {
   margin-top: 4px;
-  padding: 0 24px 20px;
 
   font-size: 16px;
   line-height: 1.88;
